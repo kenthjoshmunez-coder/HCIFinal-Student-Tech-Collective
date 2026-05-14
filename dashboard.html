@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Tech Collective Portal — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-portal">
+  <div class="portal-shell">
+    <aside class="portal-sidebar">
+      <a href="dashboard.html" class="portal-logo">Student Tech Collective</a>
+      <p class="portal-tagline">TECH COLLECTIVE PORTAL</p>
+      <nav class="portal-nav" aria-label="Portal">
+        <a href="dashboard.html" class="portal-nav-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z" fill="currentColor"/></svg>
+          DASHBOARD
+        </a>
+        <a href="settings.html" class="portal-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="1.5"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.82-.33l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.2 0 .39.04.57.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          SETTINGS
+        </a>
+      </nav>
+    </aside>
+    <div class="portal-main">
+      <header class="portal-top">
+        <h1 class="portal-greeting">Welcome back, <span id="dashUserName">User</span></h1>
+        <div class="portal-top-icons">
+          <button type="button" class="icon-btn" aria-label="Notifications"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 7h18s-3 0-3-7M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+          <button type="button" class="icon-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        </div>
+      </header>
+      <div class="portal-layout">
+        <div class="portal-col-main">
+          <section class="portal-section">
+            <h2 class="portal-h2">Active Projects</h2>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-card-top">
+                  <div class="project-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 9L5 12l3 3M16 9l3 3-3 3M14 6l-4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span class="pill pill--priority">HIGH PRIORITY</span>
+                </div>
+                <h3 class="project-title">Back-end</h3>
+                <p class="project-desc">Continue programming your data pipeline.</p>
+                <div class="progress-row">
+                  <span>Progress</span>
+                  <span>72%</span>
+                </div>
+                <div class="progress-bar"><span style="width:72%"></span></div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-top">
+                  <div class="project-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3c-4 4-6 8-6 12a6 6 0 1012 0c0-4-2-8-6-12z" stroke="currentColor" stroke-width="1.5"/><path d="M12 9v6M9 12h6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span class="pill pill--research">RESEARCH</span>
+                </div>
+                <h3 class="project-title">Machine Learning</h3>
+                <p class="project-desc">Experiment with models and training code.</p>
+                <div class="progress-row">
+                  <span>Progress</span>
+                  <span>45%</span>
+                </div>
+                <div class="progress-bar"><span style="width:45%"></span></div>
+              </article>
+            </div>
+          </section>
+          <section class="hackathon-banner">
+            <div class="hackathon-text">
+              <h2>HCI Lab Hackathon</h2>
+              <p>Join us this weekend for a 24-hour sprint focused on accessibility tech. Limited slots remaining!</p>
+              <a href="events.html" class="btn-light">REGISTER NOW</a>
+            </div>
+            <div class="hackathon-media">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&amp;w=900&amp;auto=format&amp;fit=crop" alt="Team at workstations" width="400" height="220" />
+            </div>
+            <div class="carousel-dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
+          </section>
+        </div>
+        <aside class="portal-col-side">
+          <div class="widget">
+            <h3 class="widget-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="widget-title-icon"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 3v4M16 3v4M3 11h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Upcoming Meetings</h3>
+            <ul class="meet-list">
+              <li>
+                <div class="meet-badge"><span>OCT</span><strong>24</strong></div>
+                <div>
+                  <p class="meet-title">UI/UX Workshop</p>
+                  <p class="meet-meta">14:00 PM · Zoom</p>
+                </div>
+              </li>
+              <li>
+                <div class="meet-badge"><span>NOV</span><strong>05</strong></div>
+                <div>
+                  <p class="meet-title">General Meeting</p>
+                  <p class="meet-meta">2:00 PM · Discord</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h3 class="widget-title"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="widget-title-icon"><path d="M4 5h16v14H4V5zm2 2v10h12V7H6z" stroke="currentColor" stroke-width="1.5"/><path d="M8 11h8M8 14h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Quick Resources</h3>
+            <a href="events.html" class="resource-row">Project Documentation <span>›</span></a>
+            <a href="about.html" class="resource-row">GitHub Repositories <span>›</span></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

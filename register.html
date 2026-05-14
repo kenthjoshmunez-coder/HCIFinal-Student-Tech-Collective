@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Tech Collective — Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-register">
+  <header class="navbar navbar--register">
+    <a href="index.html" class="logo">Student Tech Collective</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-nav="about">About</a></li>
+        <li><a href="events.html" class="nav-link" data-nav="events">Events</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <a href="login.html" class="login-btn">LOGIN</a>
+      <a href="register.html" class="join-btn">JOIN NOW</a>
+    </div>
+  </header>
+
+  <main class="register-main">
+    <div class="container register-grid">
+      <div class="register-hero">
+        <h1 class="register-hero-title">Build the future, together.</h1>
+        <p class="register-hero-sub">
+          Join over <strong class="text-accent">2,500+</strong> students from across the country driving innovation through research and development.
+        </p>
+        <blockquote class="testimonial">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote">
+            “The collective gave me the resources to launch my first open-source project. The mentorship is unmatched.”
+          </p>
+          <footer class="testimonial-footer">
+            <span class="testimonial-avatar" aria-hidden="true"></span>
+            <div>
+              <p class="testimonial-name">ALEC SHIN</p>
+              <p class="testimonial-role">Full stack member</p>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="register-card">
+        <h2 class="register-form-title">Create Account</h2>
+        <p class="register-form-sub">Start your journey with the Student Tech Collective today.</p>
+        <form id="registerForm" class="register-form" novalidate>
+          <label class="field-label" for="regName">FULL NAME</label>
+          <input id="regName" name="name" type="text" required class="input-plain" placeholder="Your name" />
+          <label class="field-label" for="regEmail">EMAIL ADDRESS</label>
+          <input id="regEmail" name="email" type="email" required class="input-plain" placeholder="you@example.com" autocomplete="email" />
+          <label class="field-label" for="regPassword">PASSWORD</label>
+          <input id="regPassword" name="password" type="password" required class="input-plain" placeholder="Create a password" autocomplete="new-password" />
+          <label class="field-label" for="regPasswordConfirm">CONFIRM PASSWORD</label>
+          <input id="regPasswordConfirm" name="confirmPassword" type="password" required class="input-plain" placeholder="Confirm your password" autocomplete="new-password" />
+          <p class="password-hint">Use at least 10 characters, including uppercase, lowercase, number, and symbol.</p>
+          <label class="checkbox-label register-terms">
+            <input type="checkbox" name="terms" required />
+            I agree to the <a href="#" class="link-accent">Terms of Conditions</a> and the <a href="#" class="link-accent">Privacy Policy</a>
+          </label>
+          <button type="submit" class="btn-block primary-btn">Create Account</button>
+        </form>
+        <p class="auth-footer-note center">Already have an account? <a href="login.html" class="link-accent">Login</a></p>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
